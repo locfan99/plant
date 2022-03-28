@@ -1,0 +1,48 @@
+.step{
+    padding:50px 30px;
+    background-color: $secondary-color;
+    border-radius: 20px;
+    &-heading span{
+        font-size: 40px;
+        display: block;
+        text-align: center;
+       color: white;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+    &-heading{
+        margin-bottom: 30px;
+    }
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -45px;
+    }
+    &-item{
+        box-sizing: border-box;
+        width: calc(33.33% - 45px);
+        margin-right: 45px;
+        background-color: $bg-color;
+        border-radius: 20px;
+        padding: 30px 20px;
+    }
+    &-number{
+        font-size:22px;
+        font-weight:400;
+        padding: 16px ;
+        display: inline-block;
+        background-color: $primary-color;
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+    &-title{
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        margin-bottom: 20px;
+    }
+    &-desc{
+        font-size: 14px;
+        color: $text-color;
+    }
+}

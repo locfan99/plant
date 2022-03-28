@@ -1,0 +1,50 @@
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    padding-bottom: 150px;
+    &-title{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    &-logo{
+        margin-bottom: 40px!important;
+        display: block;
+    }
+    &-subscribe{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 8px;
+        background-color: $secondary-color;
+        border-radius: 10px;
+    }
+    &-input,&-send{
+        background-color: $secondary-color;
+        border: none;
+        outline:none ;
+    }
+    &-send{
+        background-color: $primary-color;
+    }
+    ::placeholder{
+        font-size: 15px;
+    }
+    &-title{
+        margin-bottom: 25px;
+    }
+    &-info{
+        font-size: 15px;
+        color: $text-color;
+        margin-bottom: 15px;
+    }
+   &-icon{
+       color:$text-color;
+       margin-right: 10px;
+   }
+   &-card{
+       width: 35px;
+       height: 23px;
+   }
+}

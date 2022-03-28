@@ -1,0 +1,58 @@
+.banner{
+    padding-top:120px;
+    display: grid   ;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    &-image{
+        width: 350px;
+        height: 350px;
+    }
+    &-right{
+        margin: 0 auto;
+        position: relative;
+    }
+    &-title{
+        font-size: 57px;
+       line-height: 1.5;
+       font-weight: 600;
+       margin-bottom: 20px;
+    }
+    &-desc{
+        padding: 0 100px 0 0;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $text-color;
+        margin-bottom: 35px;
+    }
+    &-social{
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: -50%;
+        display: flex;
+        transform: rotate(90deg);   
+        justify-content: center;
+        align-items: center;
+        &-follow{
+            margin-right: 40px;
+            position: relative;
+            color: $primary-color;
+        }
+        &-follow:after{
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 22px; 
+            top:50%;
+            right: -30px;
+            background-color: $primary-color;
+            transform: translateY(-50%);
+        }
+        &-link{
+            color: $primary-color;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+    }
+}
